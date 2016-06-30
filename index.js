@@ -21,6 +21,8 @@ app.set('view engine', 'ejs');
 //directorio del archivo donde sestan las rutas
 require('./app/frontend/routes.js')(app);
 require('./app/backend/recipe.js')(app);
+require('./app/backend/recipesRegistration.js')(app);
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
