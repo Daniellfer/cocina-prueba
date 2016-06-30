@@ -1,9 +1,9 @@
-var objectUser = require('../models/recipes'); //Import database model to count users in control-panel
-
+//importando el modelo de la base de datos
+var objectUser = require('../models/recipes'); 
 
 module.exports = function(app){
 
-  app.get('/lugares', function(request, response) {
+  app.get('/', function(request, response) {
     response.render('backend/recipes');
   });
 

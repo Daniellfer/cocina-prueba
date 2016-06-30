@@ -5,4 +5,8 @@ module.exports = function(app){
 	response.render('frontend/index');
 	});
 
+	app.get('/receta', function(request, response) {
+	response.render('frontend/recipe');
+	});
+
 }

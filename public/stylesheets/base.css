@@ -6196,3 +6196,7 @@ html.no-touchevents .tile-action-show {
 .logo-img{
   max-width: 100px;
 }
+
+.img-recipe{
+  max-height: 400px;
+}
