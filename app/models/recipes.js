@@ -4,7 +4,9 @@ var Schema=mongoose.Schema;
 var objectSchema = new Schema({
 
 	name:String,
+	description:String,
 	author:String,
+	department:String,
     ingredients:String,
     steps:String,
     imageurl:String

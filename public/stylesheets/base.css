@@ -439,7 +439,7 @@ template,
 }
 
 .col-xx-4 {
-  width: 33.33333%;
+  width: 20%;
 }
 
 .col-xx-5 {
@@ -491,7 +491,7 @@ template,
 }
 
 .col-xx-offset-4 {
-  margin-left: 33.33333%;
+  margin-left: 5%;
 }
 
 .col-xx-offset-5 {
@@ -543,7 +543,7 @@ template,
 }
 
 .col-xx-pull-4 {
-  right: 33.33333%;
+  right: 10%;
 }
 
 .col-xx-pull-5 {
@@ -595,7 +595,7 @@ template,
 }
 
 .col-xx-push-4 {
-  left: 33.33333%;
+  left: 10%;
 }
 
 .col-xx-push-5 {
@@ -1496,8 +1496,8 @@ template,
 }
 
 .row {
-  margin-right: -16px;
-  margin-left: -16px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 .row:after, .row:before {
   content: "";
@@ -5479,7 +5479,7 @@ html.no-touchevents .tile-action-show {
 }
 
 .tile-footer-btn {
-  margin: 6px 8px;
+  margin: 3px 3px;
   white-space: nowrap;
 }
 .tile-footer-btn .btn + .btn {
@@ -6191,4 +6191,8 @@ html.no-touchevents .tile-action-show {
             transform: none;
     width: 240px;
   }
+}
+
+.logo-img{
+  max-width: 100px;
 }

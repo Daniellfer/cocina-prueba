@@ -11,8 +11,8 @@ body {
   padding-top: 68px;
   padding-bottom: 58px;
 }
-.page-brand .ui-content-header {
-  background-image: url(./images/bg/brand.jpg);
+.page-orange .ui-content-header {
+  background-image: url(./images/bg/amber.jpg);
 }
 
 .ui-footer {
