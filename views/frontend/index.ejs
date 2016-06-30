@@ -54,7 +54,8 @@
               <table class="table" title="A basic table">
                 <thead>
                   <tr>
-                    <th>Nombre del plato</th>
+                    <th>codigo</th>
+                    <th>Nombre</th>
                     <th>Autor</th>
                     <th>Departamento</th>
                     <th>Acciones</th>
@@ -67,16 +68,16 @@
                   <tr class="<%= objRec._id %>">
                     <td><%= objRec.code %></td>
                     <td><%= objRec.name %></td>
-                    <td><%= objRec.description %></td>
+                    <!--<td><%= objRec.description %></td>-->
                     <td><%= objRec.author %></td>
                     <td><%= objRec.department %></td>
-                    <td><%= objRec.ingredients %></td>
-                    <td><%= objRec.steps %></td>
-                    <td><%= objRec.imageurl %></td>
+                    <!--<td><%= objRec.ingredients %></td>-->
+                    <!--<td><%= objRec.steps %></td>
+                    <td><%= objRec.imageurl %></td>-->
                     <td>
                       <div class="row">
                         <div class="col-xx-4">
-                          <p class="margin-top-no"><a class="fbtn fbtn-green waves-attach waves-circle" href="">V</a></p>
+                          <p class="margin-top-no"><a class="fbtn fbtn-green waves-attach waves-circle" href="receta/<%= objRec._id %>">V</a></p>
                         </div>
                         <div class="col-xx-4">
                           <p class="margin-top-no"><a id="<%= objRec._id %>" class="fbtn fbtn-orange waves-attach waves-circle" href="">E</a></p>

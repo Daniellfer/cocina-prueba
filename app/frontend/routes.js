@@ -15,8 +15,17 @@ module.exports = function(app){
 
 	});
 
-	app.get('/receta', function(request, response) {
-	response.render('frontend/recipe');
+	app.get('/receta/:id', function(req, res) {
+		var id=req.param("id");
+		objectRecipe.findOne({"_id":id},function(err, objectRecipe) {
+	      if (err) {
+	        return res.send(err);
+	      }
+	      console.log(objectRecipe.name);
+	      res.render('frontend/recipe.ejs',{
+	        objRec      : objectRecipe,
+	        user              : req.user
+	      });
+	    });
 	});
-
 }

@@ -88,7 +88,7 @@ $(document).ready(function(){
 		    	if (response === 'error') {
 	           		alert('Error al eliminar la receta');
 	       		} else if (response === 'success') {
-	          		 $(this).parent("tr").remove(); 
+	          		 $(clase).remove(); 
 	          		 alert("Receta borrada satisfactoriamente");  	
 	          	}
     		}
