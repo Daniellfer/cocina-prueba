@@ -54,25 +54,25 @@ module.exports = function(app, passport) {
     });
   });
 
-  app.post('/modificarReceta/:id', function(req, res) {
+  app.post('/modificarReceta/:id',function(req, res) {
 
     var id = req.param("id");
     
-    objectRecipe.findById(id, function(err, objRecipe) {
+    objectRecipe.findById(id, function(err, objectRecipe) {
       if (err) throw err;
 
-      
+      console.log(req.body);
 
-    	objRecipe.code         = req.body.code
-    	objRecipe.name         = req.body.name
-    	objRecipe.description  = req.body.description	
-    	objRecipe.author	   = req.body.author
-    	objRecipe.department   = req.body.department
-    	objRecipe.ingredients  = req.body.ingredients
-    	objRecipe.steps  	   = req.body.steps
-    	objRecipe.imageurl     = req.body.imageurl
+      objectRecipe.name         = req.body.name
+      objectRecipe.code         = req.body.code
+    	objectRecipe.description  = req.body.description	
+    	objectRecipe.author	   = req.body.author
+    	objectRecipe.department   = req.body.department
+    	objectRecipe.ingredients  = req.body.ingredients
+    	objectRecipe.steps  	   = req.body.steps
+    	objectRecipe.imageurl     = req.body.imageurl
 
-      objRecipe.save(function(err) {
+      objectRecipe.save(function(err) {
         if (err) {
           res.end('error');
           res.redirect('/receta');

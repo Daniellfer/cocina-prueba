@@ -1,7 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function(){ 
 
 	// Al dar click en el boton Agregar...
-	$("#add-recipe").click(function(){
+	$("#add-recipe").click(function(event){
+		event.preventDefault();
 		
 		$(".table-recipes").hide(100);
 		$(".form-recipe").show(100);
@@ -21,7 +22,8 @@ $(document).ready(function(){
 	});
 
 	// Al dar click en el boton Editar...
-	$('.show-modify-form').click(function(){
+	$('.show-modify-form').click(function(event){
+		event.preventDefault();
 
 		$(".form-recipe").show(100);
 		$("#form-add-recipe").hide(100);
@@ -56,11 +58,11 @@ $(document).ready(function(){
 	});
 
 	// Al dar click en el boton Actualizar...
-	$('.modify-recipe').click(function(){
+	$('.modify-recipe').click(function(event){
+		event.preventDefault();
 
 		var dataId = this.id;
 		$('#frm-modify-recipe').attr("action", "modificarReceta/"+dataId);		
-
 		$('#frm-modify-recipe').submit();
 	});
 

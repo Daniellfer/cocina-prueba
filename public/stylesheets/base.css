@@ -6200,3 +6200,14 @@ html.no-touchevents .tile-action-show {
 .img-recipe{
   max-height: 400px;
 }
+
+.contador{
+  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+     height: 30px;
+    width: 40px;
+    background: #ffffff;
+    color: orange;
+}

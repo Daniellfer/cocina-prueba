@@ -82,16 +82,17 @@
                   <div class="card-main">
                     <div class="card-header">
                       <div class="card-inner">
-                        <h3 class="h5 margin-bottom-no margin-top-no">Puntaje de la receta <a class="fbtn fbtn-lg"> 00 </a></h3>
+                        <h3 class="h5 margin-bottom-no margin-top-no">Puntaje de la receta 
+                        <a class="fbtn fbtn-lg"><input class="contador"type="text" value="0" id="output"/></a></h3>
                       </div>
                     </div>
                     <div class="card-inner">
                       <div class="row">
                         <div class="col-xx-6">
-                          <p class="margin-top-no"><a class="fbtn fbtn-green waves-attach waves-circle waves-light">+</a></p>
+                          <p class="margin-top-no"><a href="javascript:inc_count();" class="fbtn fbtn-green waves-attach waves-circle waves-light">+</a></p>
                         </div>
                         <div class="col-xx-6">
-                          <p class="margin-top-no"><a class="fbtn fbtn-brand-accent waves-attach waves-circle waves-light">-</a></p>
+                          <p class="margin-top-no"><a href="javascript:dec_count();" class="fbtn fbtn-brand-accent waves-attach waves-circle waves-light">-</a></p>
                         </div>
                       </div>
                     </div>
@@ -114,5 +115,18 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/base.min.js"></script>
   <script src="js/project.min.js"></script>
+
+  <script>
+function inc_count()
+{
+    res = document.getElementById("output");
+    res.value = parseInt(res.value)+1;
+}
+function dec_count()
+{
+    res = document.getElementById("output");
+    res.value = parseInt(res.value)-1;
+}
+</script>
 </body>
 </html>
